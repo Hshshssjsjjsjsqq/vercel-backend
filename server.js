@@ -37,6 +37,10 @@ app.use((err, _req, res, _next) => {
 
 connectDB();
 
-app.listen(5001, () => {
-    console.log('Server is running on port 5001');
-});
+if (!process.env.VERCEL) {
+    app.listen(5001, () => {
+        console.log('Server is running on port 5001');
+    });
+}
+
+export default app;
