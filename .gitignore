@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# env secrets
+.env
+.env.*
+!.env.example
+
+# logs
+logs/
+*.log
+npm-debug.log*
+
+# runtime/temp
+tmp/
+temp/
+*.pid
+*.pid.lock
+
+# build/coverage
+dist/
+build/
+coverage/
+
+# uploads/generated
+uploads/
+public/uploads/
+
+# misc
+.DS_Store
+Thumbs.db
